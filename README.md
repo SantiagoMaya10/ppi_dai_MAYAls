@@ -1,27 +1,17 @@
 # Gastro Tour Medellín
 
-**Descrición:** Esta es una aplicación que promueve rutas gastronómicas y experiencias culinarias en diferentes destinos en la ciudad de Medellín, permitiendo la reserva de mesas y la compra de boletos para eventos gastronómicos y clases de cocina. Además, la applicación también  puede entregar la ruta óptima del tour gastronómico y cultiral según diferentes parametros para minimizar el costo y tiempos de viaje y maximizar el placer.
+**Descripción:** Esta es una aplicación que promueve rutas gastronómicas y experiencias culinarias en diferentes destinos en la ciudad de Medellín, permitiendo la reserva de mesas y la compra de boletos para eventos gastronómicos y clases de cocina. Además, la applicación también  puede entregar la ruta óptima del tour gastronómico y cultiral según diferentes parametros para minimizar el costo y tiempos de viaje y maximizar el placer.
 
 
 **Justificación:** Aproechamos el auge que vivie Medellín como centro turístico y cultural de Colombia, siendo la ciudad más visitada por turistas en Colombia en el año 2023. Siendo así, la comida es un aspecto fundamental del turismo, y cada vez más personas buscan experiencias culinarias auténticas durante sus viajes. Entre experiencias culinarias, debe haber otro tipo de eventos culturales y de entretenimiento también y nuestra aplicación proveerá los planes perfectos para combinar la comida y la cultura de la ciudad.
 
+**Uso de librerías:** Esta app hará uso de las siguientes librerías
+- NumPy: Para el análisis de datos relacionados con las preferencias culinarias de los usuarios y la gestión de inventarios de restaurantes.
+- Pandas: Para la organización de horarios de clases de cocina, reservas de mesas y gestión de reseñas de restaurantes.
+- Matplotlib: Para visualizar la distribución geográfica de restaurantes, mercados y eventos gastronómicos.
+- Scipy: Para el análisis de datos sensoriales y la optimización de menús y experiencias culinarias.
+- Geopandas: Para mapear restaurantes, mercados y rutas gastronómicas en diferentes destinos.
 
-
-## YouTube Channel
-
-You can find my YouTube channel [here](insert_youtube_channel_url). Subscribe to stay updated with our latest videos and tutorials on software design and development.
-
-## Content
-
-Our channel is based on the principles and concepts discussed in the following books:
-
-- **Clean Code**: Robert C. Martin
-- **Clean Architecture**: Robert C. Martin
-- **Domain-Driven Design**: Eric Evans
-- **Head First Design Patterns**: Eric Freeman, Elisabeth Robson, Bert Bates, Kathy Sierra
-- **Design Patterns**: Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides
-
-We regularly discuss and explore topics inspired by these influential works, offering insights and practical examples to our audience.
 
 # About me
 
