@@ -30,7 +30,7 @@ This is my [LinkedIn](https://www.linkedin.com/in/luis-santiago-maya-restrepo-75
 
 ## Contribution
 
-We welcome contributions and feedback from the community! If you have suggestions for topics, code improvements, or exercises, feel free to open an issue or submit a pull request. Together, we can create valuable resources for aspiring and experienced software developers alike.
+We welcome contributions and feedback from the community! If you have suggestions for features, bug fixes, or anything else, feel free to open an issue or submit a pull request. Together, we can create a great app to help tourists in Medellín.
 
 If you want to contribute economically it'd be highly appreciated: This is my [Patreon](https://patreon.com/user?u=122587768&utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink) page.
 
