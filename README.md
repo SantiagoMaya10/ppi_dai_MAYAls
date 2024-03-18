@@ -32,7 +32,7 @@ This is my [LinkedIn](https://www.linkedin.com/in/luis-santiago-maya-restrepo-75
 
 We welcome contributions and feedback from the community! If you have suggestions for topics, code improvements, or exercises, feel free to open an issue or submit a pull request. Together, we can create valuable resources for aspiring and experienced software developers alike.
 
-If you want to contribute economically it'd be highly appreciated: This is my [Patreon](insert_Patreon_url) and my [BuyMeACoffe](insert_BuyMeACoffe_url) pages.
+If you want to contribute economically it'd be highly appreciated: This is my [Patreon](https://patreon.com/user?u=122587768&utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink) and my [BuyMeACoffe](insert_BuyMeACoffe_url) pages.
 
 Thank you for your interest in our programming YouTube channel! Happy coding!
 
