@@ -1,7 +1,11 @@
-# ppi_dai_MAYAls
-# About my YouTube channel CodingIsArt
+# Gastro Tour Medellín
 
-Welcome to my GitHub repository for our YouTube channel CodingIsArt! This repository contains the URLs to our channel and the content we discuss, including code snippets and exercises. Our channel is dedicated to teaching software design and development, focusing on design patterns, clean code, and best practices in programming.
+Esta es una aplicación que promueve rutas gastronómicas y experiencias culinarias en diferentes destinos en la ciudad de Medellín, permitiendo la reserva de mesas y la compra de boletos para eventos gastronómicos y clases de cocina. Además, la applicación también  puede entregar la ruta óptima del tour gastronómico y cultiral según diferentes parametros para minimizar el costo y tiempos de viaje y maximizar el placer.
+
+
+Aproechamos el auge que vivie Medellín como centro turístico y cultural de Colombia, siendo la ciudad más visitada por turistas en Colombia en el año 2023. Siendo así, la comida es un aspecto fundamental del turismo, y cada vez más personas buscan experiencias culinarias auténticas durante sus viajes. Entre experiencias culinarias, debe haber otro tipo de eventos culturales y de entretenimiento también y nuestra aplicación proveerá los planes perfectos para combinar la comida y la cultura de la ciudad.
+
+
 
 ## YouTube Channel
 
