@@ -13,7 +13,7 @@
 - Geopandas: Para mapear restaurantes, mercados y rutas gastronómicas en diferentes destinos.
 
 
-# About me
+# Acerca de mi
 
 
 ¡Hola a todos! Mi nombre es Luis Santiago Maya Restrepo y actualmente soy Ingeniero de Software en una gran empresa tecnológica. He trabajado en la industria del software durante aproximadamente 4 años y estoy muy feliz de compartir mi expereinci en el desarrollo de este proyecto.
@@ -31,11 +31,11 @@ Algunas curiosidades sobre mí:
 
 Este es mi  perfil de [LinkedIn](https://www.linkedin.com/in/luis-santiago-maya-restrepo-753889183/) en caso de que quieras echarle un vistazo.
 
-## Contribution
+## Contribución
 
-We welcome contributions and feedback from the community! If you have suggestions for features, bug fixes, or anything else, feel free to open an issue or submit a pull request. Together, we can create a great app to help tourists in Medellín.
+¡Damos la bienvenida a las contribuciones y comentarios de la comunidad! Si tienes sugerencias para funcionalidades, correcciones de errores o cualquier otra cosa, no dudes en abrir un issue o enviar una solicitud de pull request. Juntos, podemos crear una gran aplicación para ayudar a los turistas en Medellín.
 
-If you want to contribute economically it'd be highly appreciated: This is my [Patreon](https://patreon.com/user?u=122587768&utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink) page.
+Si quieres contribuir económicamente, sería muy apreciado: Esta es mi página de [Patreon](https://patreon.com/user?u=122587768&utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink) .
 
-Thank you for your interest in our programming YouTube channel! Happy coding!
+¡Gracias por tu interés en nuestro proyecto! Happy coding!
 
