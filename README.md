@@ -15,18 +15,21 @@
 
 # About me
 
-Hello everyone!!  My name is Luis Santiago Maya Restrepo, and I am currently a Software Engineer at a Big Tech company. I've worked in the software industry for about 4 years now and im really happy to be sharing all the things that I've learned through all these years. 
-I am also in the last year of my underdegree in Systems and Informatics Engineering in Universidad Nacional de Colombia, at Medellín. 
 
-The areas of most interest to me are: software architecture, software design and artificial intelligence. 
+¡Hola a todos! Mi nombre es Luis Santiago Maya Restrepo y actualmente soy Ingeniero de Software en una gran empresa tecnológica. He trabajado en la industria del software durante aproximadamente 4 años y estoy muy feliz de compartir mi expereinci en el desarrollo de este proyecto.
 
-Some couriosities about me:
-- My top 3 favourite programming languages are: 1. Java 2. Python and 3. Scala.
-- My favorite OS is MacOs, in genral, unix based operative systems.
-- I don't like to view software as backend or frontend, it's too limiting. I like just to talk about software in general.
-- I love playing chess. I love chess.
+También estoy en el último año de mi carrera de Ingeniería de Sistemas e Informática en la Universidad Nacional de Colombia, en Medellín.
 
-This is my [LinkedIn](https://www.linkedin.com/in/luis-santiago-maya-restrepo-753889183/) in case you want to take a look
+Las áreas que más me interesan son: arquitectura de software, diseño de software e inteligencia artificial.
+
+Algunas curiosidades sobre mí:
+
+- Mis 3 lenguajes de programación favoritos son: 1. Java, 2. Python y 3. Scala.
+- Mi sistema operativo favorito es MacOS, en general, los sistemas operativos basados en Unix.
+- No me gusta ver el software como backend o frontend, es demasiado limitante. Prefiero hablar simplemente sobre software en general.
+- Me encanta jugar ajedrez. Amo el ajedrez.
+
+Este es mi  perfil de [LinkedIn](https://www.linkedin.com/in/luis-santiago-maya-restrepo-753889183/) en caso de que quieras echarle un vistazo.
 
 ## Contribution
 
