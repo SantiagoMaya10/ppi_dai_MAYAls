@@ -1,4 +1,5 @@
 from fasthtml.common import Main, FastHTML, H1, P, A, Form, Button, Input, serve, Title
+from databaseobjects.dbconfig import SqLiteConnector
 
 app = FastHTML()
 
@@ -18,5 +19,14 @@ def increment():
     global count
     count += 1
     return P(f"Count is set to {count}")
+
+@app.get("/dummy")
+def increment():
+
+    db_conf = SqLiteConnector()
+    conn = db_conf.get_db_connection()
+    data = conn.cursor().execute("select * from ping")
+
+    return P(data.fetchone()[0])
 
 serve()
