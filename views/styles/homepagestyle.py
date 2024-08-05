@@ -1,4 +1,3 @@
-from fasthtml.common import Style
 
 css= """ body {
             font-family: Arial, sans-serif;
@@ -30,9 +29,11 @@ css= """ body {
         .title {
             text-align: center;
             padding: 40px 0;
-            background-color: #924f4f;
+            background-color: #bb5151;
             color: white;
             font-size: 60px;
+            font-weight: bold;
+
         }
 
         .functionalities {
