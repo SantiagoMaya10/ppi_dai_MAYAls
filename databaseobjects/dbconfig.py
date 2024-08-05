@@ -6,7 +6,7 @@ class SqLiteConnector:
     _db_path_memory= ":memory:"
 
     def __init__(self):
-        self.conn = sqlite3.connect(self._db_path_memory)
+        self.conn = sqlite3.connect(self._db_path_disk)
 
     def get_db_connection(self):
         cursor = self.conn.cursor()

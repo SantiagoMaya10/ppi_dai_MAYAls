@@ -25,7 +25,8 @@ def increment():
 
     db_conf = SqLiteConnector()
     conn = db_conf.get_db_connection()
-    data = conn.cursor().execute("select * from ping")
+    with conn:
+        data = conn.cursor().execute("select * from ping")
 
     return P(data.fetchone()[0])
 
