@@ -1,29 +1,12 @@
-from fasthtml.common import Main, FastHTML, H1, P, A, Form, Button, Input, serve, Title
+from fasthtml.common import Main, FastHTML, H1, P, A, Form, Button, serve, Title
 from databaseobjects.dbconfig import SqLiteConnector
 from  views.homepage import build_home_page
 
 app = FastHTML()
 
-count = 0
-
 @app.get("/")
 def home():
     return build_home_page()
-
-@app.get("/old-home")
-def home1():
-    return Title("Count Demo"), Main(
-        H1("Count Demo"),
-        P(f"Count is set to {count}", id="count"),
-        Button("Increment", hx_post="/increment", hx_target="#count", hx_swap="beforebegin")
-    )
-
-@app.post("/increment")
-def increment():
-    print("incrementing")
-    global count
-    count += 1
-    return P(f"Count is set to {count}")
 
 @app.get("/dummy")
 def increment():
@@ -33,6 +16,6 @@ def increment():
     with conn:
         data = conn.cursor().execute("select * from ping")
 
-    return P(data.fetchone()[0])
+    return P(data.fetchone())
 
 serve()
