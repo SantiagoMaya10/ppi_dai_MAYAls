@@ -62,7 +62,7 @@ def build_home_page():
             cls='functionalities'
         ),
         Div(
-            P('© 2024 Your Company. All rights reserved.'),
+            P('© 2024 Gastro Tour Medellin. All rights reserved.'),
             P(
                 A('Privacy Policy', href='#privacy'),
                 '|',
