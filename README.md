@@ -1,5 +1,7 @@
 # Gastro Tour Medellín
 
+Link a la app: [Gastro Tour Medellin](https://ppidaimayals-production.up.railway.app/)
+
 **Descripción:** Esta es una aplicación que promueve rutas gastronómicas y experiencias culinarias en diferentes destinos en la ciudad de Medellín, permitiendo la reserva de mesas y la compra de boletos para eventos gastronómicos y clases de cocina. Además, la applicación también  puede entregar la ruta óptima del tour gastronómico y cultiral según diferentes parametros para minimizar el costo y tiempos de viaje y maximizar el placer.
 
 
