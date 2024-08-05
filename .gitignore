@@ -1,2 +1,3 @@
 # Ignore all .pyc files in the __pycache__ directories
 *.pyc
+*.db
