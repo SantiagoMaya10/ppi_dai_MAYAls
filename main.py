@@ -1,5 +1,6 @@
 from fasthtml.common import Main, FastHTML, H1, P, A, Form, Button, Input, serve, Title
 from databaseobjects.dbconfig import SqLiteConnector
+from  views.homepage import build_home_page
 
 app = FastHTML()
 
@@ -7,6 +8,10 @@ count = 0
 
 @app.get("/")
 def home():
+    return build_home_page()
+
+@app.get("/old-home")
+def home1():
     return Title("Count Demo"), Main(
         H1("Count Demo"),
         P(f"Count is set to {count}", id="count"),
