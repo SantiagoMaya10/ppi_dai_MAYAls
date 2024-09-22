@@ -22,11 +22,11 @@ def sing_up():
 def create_user():
     return 
 
-@app.get("/is-connected")
+@app.get("/is-db-connected")
 def test_db_connection():
     connector = MySqLConnectionCreator()
     connection = connector.db_conn
     connector.close_db_connection(connection)
-    return "connection is succesfull"
+    return "DB connection is succesfull"
 
 serve()
