@@ -8,11 +8,8 @@ class MySqLConnectionCreator:
     def __init__(self):
         self.db_conn = self._get_db_connection()
 
-    def _get_db_connection(self):        
-        return self._get_prod_db_conn()
-
     
-    def _get_prod_db_conn(self):
+    def _get_db_connection(self):
         try:
             host_value = os.getenv("MYSQLHOST")
             port_value = os.getenv("MYSQLPORT")
