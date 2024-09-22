@@ -1,4 +1,3 @@
-from databaseobjects.ddlstatements import *
 import mysql.connector
 from  mysql.connector import Error
 import os

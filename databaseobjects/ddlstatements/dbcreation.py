@@ -1,1 +1,0 @@
-insert_dummy_value = """INSERT INTO ping (ping_field) values("hola mundo")"""
