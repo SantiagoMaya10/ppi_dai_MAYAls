@@ -1,22 +1,24 @@
 from fasthtml.common import *
 from views.styles.homepagestyle import home_page_styles
 from views.styles.footerstyle import site_footer
+from views.styles.navbarstyle import navbar_style
 
 
-def build_home_page():
+
+def build_home_page(navbar = Div(
+            A('Login', href='/sign-in-page'),
+            A('Sign Up', href='/sign-up'),
+            cls='navbar'
+        )):
     return Html(
     Head(
         Meta(charset='UTF-8'),
         Meta(name='viewport', content='width=device-width, initial-scale=1.0'),
         Title('Gastro Tour Medellin'),
-        Style(home_page_styles(), site_footer())
+        Style(home_page_styles(), site_footer(), navbar_style())
     ),
     Body(
-        Div(
-            A('Login', href='/sign-in-page'),
-            A('Sign Up', href='/sign-up'),
-            cls='navbar'
-        ),
+        navbar,
         Div('Gastro Tour Medellin', cls='title'),
         Div(
             Div(
