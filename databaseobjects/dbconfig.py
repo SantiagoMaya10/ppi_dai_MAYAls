@@ -7,9 +7,9 @@ import os
 class MySqLConnectionCreator:
 
     def __init__(self):
-        self.db_conn = self.get_db_connection()
+        self.db_conn = self._get_db_connection()
 
-    def get_db_connection(self):        
+    def _get_db_connection(self):        
         return self._get_prod_db_conn()
 
     

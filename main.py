@@ -25,7 +25,7 @@ def create_user():
 @app.get("/is-connected")
 def test_db_connection():
     connector = MySqLConnectionCreator()
-    connection = connector.get_db_connection()
+    connection = connector.db_conn
     connector.close_db_connection(connection)
     return "connecntion is succesfull"
 
