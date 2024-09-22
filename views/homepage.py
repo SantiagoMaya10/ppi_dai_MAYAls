@@ -14,7 +14,7 @@ def build_home_page():
     Body(
         Div(
             A('Login', href='#login'),
-            A('Sign Up', href='#signup'),
+            A('Sign Up', href='/sign-up'),
             cls='navbar'
         ),
         Div('Gastro Tour Medellin', cls='title'),
