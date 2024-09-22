@@ -27,6 +27,6 @@ def test_db_connection():
     connector = MySqLConnectionCreator()
     connection = connector.db_conn
     connector.close_db_connection(connection)
-    return "connecntion is succesfull"
+    return "connection is succesfull"
 
 serve()
