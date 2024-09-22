@@ -1,2 +1,3 @@
 python-fasthtml
 mysql-connector-python
+fastapi

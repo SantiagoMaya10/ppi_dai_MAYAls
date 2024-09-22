@@ -13,7 +13,7 @@ def build_home_page():
     ),
     Body(
         Div(
-            A('Login', href='#login'),
+            A('Login', href='/sign-in-page'),
             A('Sign Up', href='/sign-up'),
             cls='navbar'
         ),

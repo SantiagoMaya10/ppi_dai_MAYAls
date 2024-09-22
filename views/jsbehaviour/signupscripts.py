@@ -17,7 +17,7 @@ js_code = """
         // Function to redirect to the sign-in page after successful registration
         function redirectToSignIn() {
             setTimeout(function() {
-                window.location.href = '/sign-in';
+                window.location.href = '/sign-in-page';
             }, 3000); // 3-second delay before redirect
         }
 """

@@ -1,10 +1,14 @@
-from fasthtml.common import FastHTML, serve, HTMLResponse, Form, Div, Head, Html,Body
+from fasthtml.common import FastHTML, serve, Form, Div, Head, Html,Body, Response
 from  views.homepage import build_home_page
 from  views.signup import build_sign_up_page
+from views.signin import build_sign_in_page
 import os
 from databaseconfig.dbconfig import MySqLConnectionCreator
 from usecases.saveuser import save_user_info
 from usecases.privacypolicy import build_privacy_policy
+from usecases.signinusecase import sign_in_user
+from fastapi.responses import RedirectResponse
+
 
 app = FastHTML()
 
@@ -28,7 +32,7 @@ def test_db_connection():
     return "DB connection is succesfull"
 
 @app.post("/create-user")
-async def create_user(
+def create_user(
     name: str = Form(...),
     lastname: str = Form(...),
     email: str = Form(...),
@@ -37,11 +41,25 @@ async def create_user(
     privacy_policy: bool = Form(...)
 ):
     # Process the user registration (e.g., save to the database)
-    save_user_info(name, lastname, email, username, password, privacy_policy)
+    return save_user_info(name, lastname, email, username, password, privacy_policy)
 
 
 @app.get("/privacy-policy")
 def get_privacy_policy():
     return build_privacy_policy()
+
+@app.get("/sign-in-page")
+def sign_in_page():
+    return build_sign_in_page()
+
+
+@app.post("/log-in-user-logic")
+def sign_in(
+    username: str = Form(...),
+    password: str = Form(...)):
+
+    return sign_in_user(username, password)
+    
+  
     
 serve()
