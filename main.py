@@ -3,6 +3,8 @@ from  views.homepage import build_home_page
 from  views.signup import build_sign_up_page
 import os
 from databaseconfig.dbconfig import MySqLConnectionCreator
+from usecases.saveuser import save_user_info
+from usecases.privacypolicy import build_privacy_policy
 
 app = FastHTML()
 
@@ -32,28 +34,14 @@ async def create_user(
     email: str = Form(...),
     username: str = Form(...),
     password: str = Form(...),
-    session_active: bool = Form(...),
     privacy_policy: bool = Form(...)
 ):
     # Process the user registration (e.g., save to the database)
-    print(name)
-    print(lastname)
-    print(email)
-    print(username)
-    print(password)
-    print(privacy_policy)
+    save_user_info(name, lastname, email, username, password, privacy_policy)
 
+
+@app.get("/privacy-policy")
+def get_privacy_policy():
+    return build_privacy_policy()
     
-    # Respond with a success message
-    message = Div(
-        f"User {username} successfully registered! Redirecting to sign-in...",
-        cls="message"
-    )
-    
-    return Html(
-        Head(),
-        Body(
-            message
-        )
-    )
 serve()
