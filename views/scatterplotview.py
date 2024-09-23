@@ -12,7 +12,7 @@ def build_scatter_plot_page():
     )
 
     footer = Div(cls='footer')(
-        P('© 2024. All rights reserved.')
+        P('© 2024 Gastro Tour Medellin. All rights reserved.')
     )
 
     # Contenido de la página con el gráfico
