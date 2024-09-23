@@ -1,8 +1,22 @@
-from scipy.spatial import distance
+# module to find ditances in scipy
+from scipy.spatial import distance 
+# Class to retrieve db connections
 from databaseconfig.dbconfig import MySqLConnectionCreator
+# fasthtml elements
 from fasthtml.common import *
 
 def find_distance_use_case(id_one, id_two):
+    """Find the Manhatan distance betewwn two 
+    restaurants. They are queried in database 
+    and then compared unsign scipy
+
+    Args:
+        id_one (int): first restaurant id
+        id_two (int): second restaurant id
+
+    Returns:
+        Div: a div that will be replaced by the htmx call
+    """
     connector = MySqLConnectionCreator()
     conn = connector.db_conn
 

@@ -28,14 +28,14 @@ def build_home_page(navbar = Div(
                 cls='functionality'
             ),
             Div(
-                H3('Find restaurants location and their address in Medellin'),
-                P('Find the top restaurants in Medellin with an amazing interactive map.'),
+                H3('Find Restaurants Location and Their Address in Medellin'),
+                P('Find the top restaurants in Medellin with an amazing interactive map'),
                 Button('View Map', onclick="window.location.href='/restaurants-map';"),
                 cls='functionality'
             ),
             Div(
-                H3('Special Offers'),
-                P('Get exclusive discounts and special offers from partnered restaurants.'),
+                H3('Compare Prices and Ratings'),
+                P('Compare prices vs ratings with an exclusive plot with all top restaurants'),
                 Button('See Offers', onclick="window.location.href='/scatter-plot';"),
                 cls='functionality'
             ),

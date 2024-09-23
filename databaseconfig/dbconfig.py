@@ -1,15 +1,22 @@
-import mysql.connector
+import mysql.connector # MySql drivers
 from  mysql.connector import Error
-import os
+import os # Module to connect to OS properties
 
 
 class MySqLConnectionCreator:
 
     def __init__(self):
+        """class constructor
+        """
         self.db_conn = self._get_db_connection()
 
     
     def _get_db_connection(self):
+        """ Opens db connection
+
+        Returns:
+            None
+        """
         try:
             host_value = os.getenv("MYSQLHOST")
             port_value = os.getenv("MYSQLPORT")
@@ -34,6 +41,11 @@ class MySqLConnectionCreator:
             return None
         
     def close_db_connection(self, connection):
+        """Closes db connection
+
+        Args:
+            connection (Connection): the current connection
+        """
         if connection.is_connected():
             connection.close()
             print("MySQL connection is closed.")

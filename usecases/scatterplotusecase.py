@@ -4,10 +4,12 @@ import base64
 from databaseconfig.dbconfig import MySqLConnectionCreator
 import matplotlib
 
-# Establecer el backend a 'Agg' para evitar problemas con la GUI
+# Establish 'Agg' (Anti-Grain Geometry) backend attribute
+# to avoid GUI problems. It is a noninteractive backend
+# since we dont want to render the plots in backned,
+# just create a file to render in front end
 matplotlib.use('Agg')
 
-# Función para generar el gráfico scatter
 def generate_scatter_plot():
     connector = MySqLConnectionCreator()
     conn = connector.db_conn
@@ -19,11 +21,12 @@ def generate_scatter_plot():
                AND visitors_average_rating IS NOT NULL
             """
     cursor.execute(query)
-    restaurants = cursor.fetchall()  # Recupera los resultados como tuplas
+    # Fetch results as tuples
+    restaurants = cursor.fetchall()  
     cursor.close()
     connector.close_db_connection(conn)
     
-    # Crear el scatter plot
+    # Create scatter plot
     fig, ax = plt.subplots(figsize=(25, 10))
 
     # Extraer datos de los restaurantes (usando índices de tupla)

@@ -1,7 +1,16 @@
-import folium
+import folium # library to create interactive maps
+# Class to retrieve db connections
 from databaseconfig.dbconfig import MySqLConnectionCreator
 
 def create_map():
+    """Fetches all restaurants from database
+    and then creates an interactive map with folium
+    locating each restaurant in the map and its address
+
+    Returns:
+        str : An str which is an HTML document 
+        with the map
+    """
     # Fetch restaurants from the database
     connector = MySqLConnectionCreator()
     conn = connector.db_conn
@@ -21,5 +30,5 @@ def create_map():
             icon=folium.Icon(color="blue", icon="cutlery", prefix="fa")
         ).add_to(medellin_map)
 
-    # Save map to HTML (you can also directly return the HTML)
+    # Save map to HTML
     return medellin_map._repr_html_()  # This returns the map as an HTML string
