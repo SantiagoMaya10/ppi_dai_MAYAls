@@ -7,7 +7,7 @@ def build_navbar(session_user=None):
             Div(
                 A(f'{session_user}', href='#', cls='dropbtn'),
                 Div(
-                    A('update-password', href='/change-password'),
+                    A('update-password', href='/update-password-page'),
                     A('Log Out', href='/sign-out'),
                     cls='dropdown-content'
                 ),

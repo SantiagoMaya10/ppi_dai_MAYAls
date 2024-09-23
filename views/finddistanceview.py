@@ -2,7 +2,7 @@ from fasthtml.common import *
 from views.styles.homepagestyle import home_page_styles
 from views.styles.footerstyle import site_footer
 from views.styles.finddistancestyle import find_distance_style
-from usecases.findallrestaurants import find_all_restaurants
+from usecases.findallrestaurantsusecase import find_all_restaurants
 
 def build_find_restaurants_distance_page():
     restaurants = find_all_restaurants()
@@ -17,9 +17,7 @@ def build_find_restaurants_distance_page():
         ),
         Body(
             Div(cls='navbar')(
-                A('Home', href='/'),
-                A('Login', href='/sign-in-page'),
-                A('Sign Up', href='/sign-up')
+                A('Home', href='/')
             ),
             Div(cls='explore-title')(
                 H1('Explore Restaurants in Medellin')

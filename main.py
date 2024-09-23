@@ -8,13 +8,15 @@ from views.signupview import build_sign_up_page
 from views.signinview import build_sign_in_page
 from views.finddistanceview import build_find_restaurants_distance_page
 from views.contactinfoview import build_about_page
+from views.updatepasswordview import build_change_password_page
 
-from usecases.saveuser import save_user_info
-from usecases.privacypolicy import build_privacy_policy
+from usecases.saveuserusecase import save_user_info
+from usecases.privacypolicyusecase import build_privacy_policy
 from usecases.signinusecase import sign_in_user
 from usecases.navbarusecase import build_navbar
 from usecases.finddistanceusecase import find_distance_use_case
 from usecases.createmapusecase import create_map
+from usecases.updatepasswordusecase import update_password_usecase
 
 from databaseconfig.dbconfig import MySqLConnectionCreator
 
@@ -87,6 +89,18 @@ async def sign_out():
 @app.get("/contact-info")
 def get_contact_info():
     return build_about_page()
+
+@app.get("/update-password-page")
+def update_password_page():
+    return build_change_password_page()
+
+@app.post("/update-password")
+async def update_password(request: Request):
+    form_data = await request.form()
+    new_password = str(form_data['new_password'])  
+    session_user = request.cookies.get("session_user")
+    update_password_usecase(new_password, session_user)
+    return RedirectResponse(url="/", status_code=303)
 
 @app.get("/is-db-connected")
 def test_db_connection():
