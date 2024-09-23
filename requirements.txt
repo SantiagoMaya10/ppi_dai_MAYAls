@@ -4,3 +4,4 @@ fastapi
 numpy
 scipy
 folium
+matplotlib

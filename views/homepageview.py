@@ -36,7 +36,7 @@ def build_home_page(navbar = Div(
             Div(
                 H3('Special Offers'),
                 P('Get exclusive discounts and special offers from partnered restaurants.'),
-                Button('See Offers', onclick="window.location.href='#special-offers';"),
+                Button('See Offers', onclick="window.location.href='/scatter-plot';"),
                 cls='functionality'
             ),
             cls='functionalities'

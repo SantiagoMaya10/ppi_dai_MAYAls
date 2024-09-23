@@ -9,6 +9,7 @@ from views.signinview import build_sign_in_page
 from views.finddistanceview import build_find_restaurants_distance_page
 from views.contactinfoview import build_about_page
 from views.updatepasswordview import build_change_password_page
+from views.scatterplotview import build_scatter_plot_page
 
 from usecases.saveuserusecase import save_user_info
 from usecases.privacypolicyusecase import build_privacy_policy
@@ -101,6 +102,10 @@ async def update_password(request: Request):
     session_user = request.cookies.get("session_user")
     update_password_usecase(new_password, session_user)
     return RedirectResponse(url="/", status_code=303)
+
+@app.get("/scatter-plot")
+def scatter_plot_page():
+    return build_scatter_plot_page()
 
 @app.get("/is-db-connected")
 def test_db_connection():
