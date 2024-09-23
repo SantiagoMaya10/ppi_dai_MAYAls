@@ -20,7 +20,7 @@ def build_about_page():
         P('Name: Luis Santiago Maya Restrepo'),
         P('Undergraduate: 9th semester of Systems Engineering at the National University of Colombia'),
         P('LinkedIn: ', A('Luis Santiago Maya Restrepo on LinkedIn', href=os.getenv("LINKEDIN"), target='_blank')),
-        P(f'Forma de contacto: {os.getenv("EMAIL")}')
+        P(f'Contact me via e-mail: {os.getenv("EMAIL")}')
         
     )
 
