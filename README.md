@@ -37,6 +37,9 @@ Este es mi  perfil de [LinkedIn](https://www.linkedin.com/in/luis-santiago-maya-
 
 ¡Damos la bienvenida a las contribuciones y comentarios de la comunidad! Si tienes sugerencias para funcionalidades, correcciones de errores o cualquier otra cosa, no dudes en abrir un issue o enviar una solicitud de pull request. Juntos, podemos crear una gran aplicación para ayudar a los turistas en Medellín.
 
+Recuerda que el punto de entrada de la aplicación está en el módulo main.py ubicado en la raíz del proyecto. Basta con ejecutar en local $python3 main.py 
+para poner el proyecto a funcionar.
+
 Si quieres contribuir económicamente, sería muy apreciado: Esta es mi página de [Patreon](https://patreon.com/user?u=122587768&utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink) .
 
 ¡Gracias por tu interés en nuestro proyecto! Happy coding!
