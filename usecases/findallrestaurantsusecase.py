@@ -4,7 +4,7 @@ def find_all_restaurants():
     connector = MySqLConnectionCreator()
     conn = connector.db_conn
     cursor = conn.cursor(dictionary=True)
-    cursor.execute("SELECT id, name, location_lat, location_lon, address FROM restaurant")
+    cursor.execute("SELECT id, name, location_lat, location_lon, address, average_price_usd, visitors_average_rating FROM restaurant")
     restaurants = cursor.fetchall()
     cursor.close()
 

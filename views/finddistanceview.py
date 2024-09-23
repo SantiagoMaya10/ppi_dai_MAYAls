@@ -31,7 +31,9 @@ def build_find_restaurants_distance_page():
                             Th('Name'),
                             Th('Latitude'),
                             Th('Longitude'),
-                            Th('Address')
+                            Th('Address'),
+                            Th('Average price USD'),
+                            Th('Average user rating')
                         )
                     ),
                     Tbody(
@@ -41,7 +43,11 @@ def build_find_restaurants_distance_page():
                                 Td(restaurant['name']),
                                 Td(str(restaurant['location_lat'])),
                                 Td(str(restaurant['location_lon'])),
-                                Td(restaurant['address'])
+                                Td(restaurant['address']),
+                                Td(restaurant['average_price_usd']),
+                                Td(restaurant['visitors_average_rating']),
+
+
                             )
                             for restaurant in restaurants
                         ]

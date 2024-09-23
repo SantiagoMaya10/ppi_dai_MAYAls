@@ -42,28 +42,6 @@ def build_home_page(navbar = Div(
             cls='functionalities'
         ),
         Div(
-            Div(
-                H3('Find How Far Your Favorite Place Is From You'),
-                P('Enter your desired place and we´ll tell you how far you are'),
-                Button('Where Is It', onclick="window.location.href='#explore-restaurants';"),
-                cls='functionality'
-            ),
-            Div(
-                H3('Rate Places You Have Visited'),
-                P('Give your feedback and opinion on the places we recommend'),
-                Button('Rate Places', onclick="window.location.href='#food-events';"),
-                cls='functionality'
-            ),
-            Div(
-                H3('Get Your Guide'),
-                P('We have some recommended guides for you,\
-                   book one of them if you want and prepare a nice tour!'),
-                Button('Contact Guide', onclick="window.location.href='#special-offers';"),
-                cls='functionality'
-            ),
-            cls='functionalities'
-        ),
-        Div(
             P('© 2024 Gastro Tour Medellin. All rights reserved.'),
             P(
                 A('Privacy Policy', href='/privacy-policy'),

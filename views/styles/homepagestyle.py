@@ -39,8 +39,8 @@ css= """ body {
         .functionalities {
             display: flex;
             justify-content: space-around;
-            margin: 20px 0;
-            padding: 0 20px;
+            margin: 150px 0;
+            padding: 0 100px;
         }
 
         .functionality {
