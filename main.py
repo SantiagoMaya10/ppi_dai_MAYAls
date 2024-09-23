@@ -9,7 +9,10 @@ from usecases.privacypolicy import build_privacy_policy
 from usecases.signinusecase import sign_in_user
 from usecases.navbarusecase import build_navbar
 from usecases.finddistanceusecase import find_distance_use_case
+from usecases.createmapusecase import create_map
 from fastapi import Request, Form
+from fastapi.responses import HTMLResponse
+
 
 
 
@@ -33,6 +36,12 @@ async def find_distance_two_restaurants(request: Request):
     restaurant2_id = int(form_data['restaurant2_id'])
     return find_distance_use_case(restaurant1_id, restaurant2_id)
     
+@app.get("/restaurants-map")
+async def get_restaurants_map():
+    # Generate the map HTML
+    map_html = create_map()
+    # Return the map as HTML to the front end
+    return HTMLResponse(content=map_html)
 
 @app.get("/sign-up")
 def sing_up():
@@ -72,6 +81,8 @@ def test_db_connection():
     connection = connector.db_conn
     connector.close_db_connection(connection)
     return "DB connection is succesfull"
+
+
 
     
 serve()

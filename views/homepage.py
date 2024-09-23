@@ -28,9 +28,9 @@ def build_home_page(navbar = Div(
                 cls='functionality'
             ),
             Div(
-                H3('Food Events'),
-                P('Stay updated with the latest food events and festivals happening around the city.'),
-                Button('View Events', onclick="window.location.href='#food-events';"),
+                H3('Find restaurants location and their address in Medellin'),
+                P('Find the top restaurants in Medellin with an amazing interactive map.'),
+                Button('View Map', onclick="window.location.href='/restaurants-map';"),
                 cls='functionality'
             ),
             Div(
