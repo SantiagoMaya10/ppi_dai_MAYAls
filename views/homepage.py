@@ -22,9 +22,9 @@ def build_home_page(navbar = Div(
         Div('Gastro Tour Medellin', cls='title'),
         Div(
             Div(
-                H3('Explore Restaurants'),
-                P('Discover the best restaurants in Medellin with detailed reviews and ratings.'),
-                Button('Explore Now', onclick="window.location.href='#explore-restaurants';"),
+                H3('Explore Restaurants Distance'),
+                P('Discover the best restaurants in Medellin and find Manhatan distances between them'),
+                Button('Explore Now', onclick="window.location.href='/find-distance-page';"),
                 cls='functionality'
             ),
             Div(
