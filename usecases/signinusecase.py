@@ -1,7 +1,7 @@
 from databaseconfig.dbconfig import MySqLConnectionCreator
 from mysql.connector import Error
 from fastapi.responses import RedirectResponse
-from views.signin import build_sign_in_page
+from views.signinview import build_sign_in_page
 from fasthtml.common import Div
 
 
@@ -11,9 +11,6 @@ def sign_in_user(username: str, password: str):
     user = _verify_user_exists(username, password)
 
     if user:
-        # Update session_active to True
-        _update_session_active(username, True)
-
         # Set a session cookie with the username (or user ID)
         response = RedirectResponse(url="/", status_code=303)
         response.set_cookie(key="session_user", value=username, httponly=True)
@@ -42,23 +39,5 @@ def _verify_user_exists(username: str, password: str):
     except Error as e:
         print(f"Error fetching user: {e}")
         return None
-    finally:
-        connector.close_db_connection(conn)
-
-
-def _update_session_active(username, active=True):
-    try:
-        connector= MySqLConnectionCreator()
-        conn = connector.db_conn
-        cursor = conn.cursor()
-        query = """
-            UPDATE user SET session_active = %s WHERE username = %s
-        """
-        cursor.execute(query, (active, username))
-        conn.commit()
-        print(f"User {username}'s session_active updated to {active}.")
-    except Error as e:
-        print(f"Error updating session_active: {e}")
-        conn.rollback()
     finally:
         connector.close_db_connection(conn)

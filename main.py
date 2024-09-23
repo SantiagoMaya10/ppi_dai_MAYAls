@@ -1,19 +1,22 @@
 from fasthtml.common import FastHTML, serve, Form
-from  views.homepage import build_home_page
-from  views.signup import build_sign_up_page
-from views.signin import build_sign_in_page
-from views.finddistance import build_find_restaurants_distance_page
-from databaseconfig.dbconfig import MySqLConnectionCreator
+
+from fastapi import Request, Form
+from fastapi.responses import HTMLResponse, RedirectResponse
+
+from views.homepageview import build_home_page
+from views.signupview import build_sign_up_page
+from views.signinview import build_sign_in_page
+from views.finddistanceview import build_find_restaurants_distance_page
+from views.contactinfoview import build_about_page
+
 from usecases.saveuser import save_user_info
 from usecases.privacypolicy import build_privacy_policy
 from usecases.signinusecase import sign_in_user
 from usecases.navbarusecase import build_navbar
 from usecases.finddistanceusecase import find_distance_use_case
 from usecases.createmapusecase import create_map
-from fastapi import Request, Form
-from fastapi.responses import HTMLResponse
 
-
+from databaseconfig.dbconfig import MySqLConnectionCreator
 
 
 
@@ -74,6 +77,16 @@ def sign_in(
 def get_privacy_policy():
     return build_privacy_policy()
 
+@app.get("/sign-out")
+async def sign_out():
+    # Remove the session cookie
+    response = RedirectResponse(url="/", status_code=303)
+    response.delete_cookie("session_user")  # Deletes the session cookie
+    return response
+
+@app.get("/contact-info")
+def get_contact_info():
+    return build_about_page()
 
 @app.get("/is-db-connected")
 def test_db_connection():
@@ -81,8 +94,6 @@ def test_db_connection():
     connection = connector.db_conn
     connector.close_db_connection(connection)
     return "DB connection is succesfull"
-
-
 
     
 serve()

@@ -66,11 +66,9 @@ def build_home_page(navbar = Div(
         Div(
             P('© 2024 Gastro Tour Medellin. All rights reserved.'),
             P(
-                A('Privacy Policy', href='#privacy'),
+                A('Privacy Policy', href='/privacy-policy'),
                 '|',
-                A('Terms of Service', href='#terms'),
-                '|',
-                A('Contact Us', href='#contact')
+                A('Contact Us', href='/contact-info')
             ),
             Div(
                 A('Contribute on Patreon', href='https://patreon.com/user?u=122587768&utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink', target='_blank'),
