@@ -21,7 +21,7 @@ css= """ body {
             border-radius: 4px;
         }
         input[type="submit"] {
-            background-color: #28a745;
+            background-color: #d75c5c;
             color: white;
             padding: 10px;
             border: none;
@@ -30,7 +30,7 @@ css= """ body {
             margin-top: 10px;
         }
         input[type="submit"]:hover {
-            background-color: #218838;
+            background-color: #dc1313;
         }
         .checkbox-container {
             display: flex;

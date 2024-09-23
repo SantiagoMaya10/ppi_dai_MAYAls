@@ -46,7 +46,7 @@ body {
         input[type="submit"] {
             width: 100%;
             padding: 12px;
-            background-color: #28a745;
+            background-color: #d66767;
             border: none;
             color: white;
             font-size: 16px;
@@ -56,7 +56,7 @@ body {
         }
 
         input[type="submit"]:hover {
-            background-color: #218838;
+            background-color: #dc1313;
         }
 
         input[type="submit"]:disabled {
